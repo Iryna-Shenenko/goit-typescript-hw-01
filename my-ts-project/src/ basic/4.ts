@@ -11,5 +11,6 @@ function showMessage(message: string): void {
     return num1 + num2;
  };
 
-
- 
+ function customError(): never{
+    throw new Error('Error');
+  }

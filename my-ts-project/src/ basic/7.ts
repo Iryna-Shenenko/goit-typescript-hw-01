@@ -7,7 +7,7 @@ interface PageDetails {
     title: string;
     likes: number;
     accounts: string[];
-    status: string;
+    status: "open"|"close";
     details?: PageDetails; 
   }
   

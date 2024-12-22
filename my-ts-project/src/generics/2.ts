@@ -6,8 +6,7 @@ type AllType = {
   };
   
 
-  function compare<
-  T extends Pick<AllType, "name" | "color">,
+  function compare<T extends Pick<AllType, "name" | "color">,
   U extends Pick<AllType, "position" | "weight">
 >(top: T, bottom: U): AllType {
   return {
